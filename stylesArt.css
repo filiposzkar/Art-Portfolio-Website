@@ -1,0 +1,300 @@
+* {
+    font-family: 'Kinetic';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #EDF5FF;
+}
+#FOlogo{
+    width: 3.2rem;
+}
+#orangeInsta{
+    width: 1.5rem;
+}
+#greenInsta{
+    width: 1.5rem;
+}
+header{
+    display: flex;
+    padding: 1rem 6rem;
+    position:fixed;
+    background-color: white;
+    width:100%;
+    z-index: 99;
+}
+nav{
+    display:flex;
+    width: 100%;
+    align-items: center;
+}
+.instaLogos{
+    margin-left: auto;
+}
+.instaLogos li{
+    display: flex;
+    align-items: center;
+}
+.navBar, .instaLogos{
+    display: flex;
+    list-style: none;
+}
+.navBar a, .instaLogos a{
+    text-decoration: none;
+    color:black;
+}
+.navBar li, .instaLogos li{
+    margin-left: 2rem;
+}
+#orange{
+    color:#D98D09;
+    margin-left: 0.3rem;
+}
+#green{
+    color:#0BB55A;
+    margin-left: 0.3rem;
+}
+#artUnderline{
+    width: 2rem;
+    text-decoration-color:#03FF79;
+    text-underline-offset: 0.3rem;
+    text-decoration-thickness: 0.2rem;
+}
+main > section{
+    padding: 0 6rem;
+}
+#heroSection{
+    background-color: #EDF5FF;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    height: 90vh;
+    left:0;
+    right:0;
+}
+#heroSection button{
+    background-color: #03FF79;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius:10px;
+    font-size: 1.1rem;
+    margin-top:2rem;
+    color:white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#heroSection button:hover{
+    background-color:#013318;
+    color:#03FF79;
+}
+#artIllustration{
+    width:30rem;
+    margin-left: 12rem;
+}
+h1{
+    font-size: 4rem;
+    width: 35rem;
+}
+p{
+    width:30rem;
+    font-size:1.2rem;
+    margin-top: 1.5rem;
+}
+#arrow-hero-section{
+    width: 2rem;
+    bottom: 5rem;
+    left: 50%;
+    margin-left: -20px;
+    position: relative;
+}
+#bounceSection{
+    width: 100%;
+    background-color: #EDF5FF;
+}
+.bounce{
+    animation: bounce 2s infinite;
+  }
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+}
+h2{
+    font-size: 3rem;
+}
+#artGallerySection{
+    text-align:justify;
+    background-color:#EDF5FF;
+    width: 100%;
+    padding:0 6rem;
+}
+#ContactSectionArt{
+    justify-content: space-between;
+    align-items: center;
+    display:flex;
+    background-color: #EDF5FF;  
+    width:100%;
+    height:90vh;
+    left:0;
+    right:0;
+}
+#ContactIllustration{
+    width: 30rem;
+}
+
+h2{
+    font-size:3rem;
+    width: 30%;
+    margin-bottom: 2rem;    
+}
+textarea{
+    height:140px;
+    width:600px;
+    border-radius: 7px;
+    border:none;
+    margin-top:0.5rem;
+    font-size: 17px;
+}
+input[type="text"] {
+    width: 600px;
+    height: 30px;
+    border-radius: 7px;
+    margin-top:0.5rem;
+    margin-bottom: 0.5rem;
+    border:none;
+    font-size: 17px;
+}
+#ContactButton{
+    border:none;
+    background-color: #03FF79;
+    color:white;
+    border-radius: 10px;
+    font-size:1.2rem;
+    padding: 1rem 3.2rem;
+    cursor:pointer;
+    margin-top: 1rem;
+    transition: 0.3s;
+}
+#ContactSectionArt button:hover{
+    background-color:#013318;
+    color:#03FF79;
+}
+#emailbox{
+    font-size: 1.2rem;
+}
+#messagebox{
+    font-size: 1.2rem;
+}
+.textBoxes{
+    margin-left: -35.3rem;
+}
+#ContactH2{
+    font-size: 3rem;
+    margin-top:-22rem;
+}
+textarea::placeholder, input::placeholder{
+    color:rgb(197, 197, 197);
+}
+input{
+    padding: 0 10px; 
+}
+textarea{
+    padding: 6px 10px;
+}
+.footerText{
+    background-color:white;
+    width:100%;
+    margin-bottom: 2rem;
+}
+.footerText a{
+    text-decoration: none;
+    color:#4B4BFF;
+}
+body > footer{
+    padding: 0 6rem;
+}
+#portraitText{
+    margin-bottom: 4rem;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    min-height: 100vh;
+    grid-gap: 2rem;
+}
+.img-wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    height: 400px;
+    width: 400px;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+}
+.img-wrapper img:hover{
+    transform: scale(1.2);
+} 
+.img-wrapper{
+    overflow:hidden;
+} 
+.modal{
+    background: rgba(0,0,0,0.6);
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.25s ease-out;
+}
+
+.modal p{
+    color:white;
+    font-size: 2rem;
+    position: absolute;
+    bottom:5%;
+    left:50%;
+    transform:translate(-35%, -5%);
+}
+
+.modal button{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    margin-left: 40rem;
+    margin-top: -15rem;
+    font-size: 3rem;
+    color: #ff035f;
+    background-color: #ffc8dc;
+    border:none;
+    cursor: pointer;
+}
+#img-container {
+    width: 1000px;
+    height: 1000px;
+}
+.full-img, .close-button{
+    position:absolute;
+    object-fit: contain;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.3); 
+    transition: all 0.25s ease-out;
+}
+.full-img .open{
+    transform: translate(-50%, -50%) scale(1);
+    
+}
+.modal.open{
+    opacity: 1;
+    pointer-events: all;
+}
